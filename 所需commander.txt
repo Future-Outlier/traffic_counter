@@ -1,0 +1,47 @@
+python main.py -p <C:\Users\twisted_fate\Desktop\2021資料創新應用競賽\test.avi> -vo firsttry
+C:\Users\twisted_fate\Desktop\2021資料創新應用競賽\test.avi
+
+python main.py -p <D:\python_test_Project\test.avi> -d v, 0.7
+
+python main.py -p C:\Users\twisted_fate\Desktop\2021資料創新應用競賽\test.avi  -d H 0.4 # we can get the correct vehicles amount by divide it 2 
+python main.py -p C:\Users\twisted_fate\Desktop\2021資料創新應用競賽\test.avi  -d V 0.7 # we can get the correct vehicles amount by divide it 2 
+
+
+python main.py -p C:\Users\twisted_fate\Desktop\2021資料創新應用競賽\test.avi -vw 640
+python main.py -p C:\Users\twisted_fate\Desktop\2021資料創新應用競賽\test.avi -vo analyzed_video
+python main.py -p C:\Users\twisted_fate\Desktop\2021資料創新應用競賽\test.avi -vo analyzed_video -vp MJPG avi
+
+python main.py -p C:\Users\twisted_fate\Desktop\2021資料創新應用競賽\test.avi -vo analyzed_video
+
+main problem:
+1.數太快 // line179 overcounting, line211 waitkey
+2.線  
+
+主要觀察函式部分
+1.bind_objects()
+2._is_line_crossed()
+3.main loop
+
+line 84 製造兩條線
+
+
+remember to ctrl+f:  current_car_amount 
+
+global : current_car_amount = 0 
+150  current_car_amount = 0 # todo try to reset the current_car_amount
+line 201 is the new frame place
+
+grabbed,img = self.video_source.read()
+ img = cv2.resize(img,(self._vid_width,self._vid_height))
+
+ # todo datet adn puttext datet is added
+        '''grabbed, img = self.video_source.read()
+        img = cv2.resize(img, (self._vid_width, self._vid_height))
+        img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
+        datet = str(datetime.datetime.now()) + ": " + str(current_car_amount)  # todo current_car_amount is not defined
+        tmp_date = cv2.putText(img, datet, (15, self._vid_height - 50), self.font, 1, (255, 255, 255), 3)
+        cv2.imshow('timeline', tmp_date)''' 
+
+
+#line_direction,line_position)
+       # self.collage_frame = self._create_collage_frame()
