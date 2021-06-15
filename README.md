@@ -1,13 +1,9 @@
- I revise the code from https://github.com/andresberejnoi/ComputerVision and turn it into counting amount of cars and motorcycles per frames.
- It's free to use it and you can apply it on any applications.
+## I revise the code from https://github.com/andresberejnoi/ComputerVision and turn it into counting amount of cars and motorcycles per frames.
+## It's free to use it and you can apply it on any applications.
 # Traffic Counter
 
-![car counting](./screenshots/316_car_counting.jpeg)
-![car counting](./screenshots/316_threshold_applied.jpeg)
 
-![Collage image](./screenshots/316_collage.jpeg)
-
-This is the result of my undergraduate summer of research (2015) for the computer science department at Berea College. The OpenCV library is used to detect moving objects in a video feed by background subtraction and edge detection. 
+This is the result of the author's undergraduate summer of research (2015) for the computer science department at Berea College. The OpenCV library is used to detect moving objects in a video feed by background subtraction and edge detection. 
 
 No machine learning or fancy AI is being done here. This was mainly to keep the processing requirements low.
 
