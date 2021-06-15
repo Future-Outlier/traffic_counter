@@ -1,5 +1,5 @@
-# I revise the code from https://github.com/andresberejnoi/ComputerVision and turn it into counting amount of cars and motorcycles per frames.
-# It's free to use it and you can apply it on any applications.
+ I revise the code from https://github.com/andresberejnoi/ComputerVision and turn it into counting amount of cars and motorcycles per frames.
+ It's free to use it and you can apply it on any applications.
 # Traffic Counter
 
 ![car counting](./screenshots/316_car_counting.jpeg)
