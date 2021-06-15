@@ -1,0 +1,3 @@
+cd D:\PYTHON_Environments\Environments # venv place
+project_env\Scripts\activate.bat # venv place 
+cd D:\Python\Master_Python\PythonProject

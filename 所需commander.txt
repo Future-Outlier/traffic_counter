@@ -1,0 +1,39 @@
+虛擬環境
+cd D:\PYTHON_Environments\Environments # venv place
+project_env\Scripts\activate.bat # venv place 
+cd D:\Python\Master_Python\PythonProject
+////
+
+
+
+python main.py -p C:\Users\twisted_fate\Desktop\2021資料創新應用競賽\官方模擬資料\CCTV影像-20210318T012620Z-006\CCTV影像\TEST_VIDEOS\A4_TEST.avi -d H 0.4 # we can get the correct vehicles amount by divide it 2 
+python main.py -p C:\Users\twisted_fate\Desktop\2021資料創新應用競賽\test.avi  -d V 0.7 # we can get the correct vehicles amount by divide it 2 
+
+
+python main.py -p C:\Users\twisted_fate\Desktop\2021資料創新應用競賽\test.avi -vw 640
+python main.py -p C:\Users\twisted_fate\Desktop\2021資料創新應用競賽\test.avi -vo analyzed_video
+python main.py -p C:\Users\twisted_fate\Desktop\2021資料創新應用競賽\test.avi -vo analyzed_video -vp MJPG avi
+
+python main.py -p C:\Users\twisted_fate\Desktop\2021資料創新應用競賽\test.avi -vo analyzed_video
+
+main problem:
+1.數太快 // line179 overcounting, line211 waitkey
+2.線  
+
+主要觀察函式部分
+1.bind_objects()
+2._is_line_crossed()
+3.main loop
+
+## 路口狀況 以及 需要調整之minarea
+### 使用程式時需要注意將影片轉為.avi檔案
+main.py line 8 可調整minarea
+
+A1魚眼: minarea 5
+A2平面: minarea 50
+A3微魚眼(影響小): minarea 50
+A4平面(done): minarea 300 
+A5平面: minarea 50
+A6平面: minarea 15
+A7平面: minarea 40
+A8平面: minarea 50
