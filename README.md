@@ -7,5 +7,8 @@
 
 ### 3.Try lots of parameters about the frame to detect vehicles.
 
+### • Tracked car amounts in every frame of CCTV videos by using OpenCV
+### • Developed program by revising other’s OpenCV project and reading OpenCV documentation
+
 ![image](https://user-images.githubusercontent.com/76461262/142214130-ad2de60e-04b4-4472-b5a4-eba3aee54143.png)
 
